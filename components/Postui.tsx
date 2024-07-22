@@ -26,10 +26,10 @@ const Postui: React.FC<PostUiProps> = ({
   };
 
   return (
-    <div className="block">
-      <div className="flex items-center">
-        <h2 className="text-2xl mt-6">{title}</h2>
-        <div className="ml-2 mt-5 flex">
+    <div className="block p-4">
+      <div className="flex flex-col sm:flex-row sm:items-center">
+        <h2 className="text-xl sm:text-2xl mt-2 sm:mt-6">{title}</h2>
+        <div className="mt-3 sm:ml-4 sm:mt-5 flex">
           <button
             onClick={handleLikeClick}
             className="ml-2 bg-green-200 text-gray-700 p-2 rounded flex items-center"

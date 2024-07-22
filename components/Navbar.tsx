@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
-import SearchBar from "./Searchbar";
+
 import Link from "next/link";
 
 const Navbar = () => {
