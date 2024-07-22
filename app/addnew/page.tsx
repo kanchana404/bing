@@ -38,8 +38,8 @@ const NewPostForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10">
-      <h1 className="text-2xl font-bold mb-6">Add New Post</h1>
+    <div className="max-w-lg mx-auto p-4 sm:p-6 lg:p-8">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-6">Add New Post</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block text-gray-700">Title</label>
@@ -71,13 +71,13 @@ const NewPostForm = () => {
             className="mt-1 block w-full"
             required
           />
-          <div className="mt-4 grid grid-cols-3 gap-4">
+          <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {photoPreviews.map((preview, index) => (
               <Image
                 key={index}
                 src={preview}
                 alt={`Photo Preview ${index + 1}`}
-                className="w-24 h-24 object-cover rounded-md border border-gray-300"
+                className="w-full h-24 object-cover rounded-md border border-gray-300"
                 width={96}
                 height={96}
               />
