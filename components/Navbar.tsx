@@ -13,7 +13,7 @@ const Navbar = () => {
         </div>
 
         <div className="ml-auto">
-          <Link href="/">
+          <Link href="/home">
             <Button className="mr-3">Sign-in</Button>
           </Link>
         </div>
